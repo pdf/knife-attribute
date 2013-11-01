@@ -1,0 +1,7 @@
+require 'chef/knife'
+require 'knife-attribute/version'
+require 'knife-attribute/attribute_types'
+require 'knife-attribute/helpers'
+require 'knife-attribute/common_options'
+require 'knife-attribute/node/helpers'
+require 'knife-attribute/node/set'

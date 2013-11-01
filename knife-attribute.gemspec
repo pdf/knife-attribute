@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'knife/attribute/version'
+require 'knife-attribute/version'
 
 Gem::Specification.new do |spec|
   spec.name          = 'knife-attribute'
-  spec.version       = Knife::Attribute::VERSION
+  spec.version       = KnifeAttribute::VERSION
   spec.authors       = ['Peter Fern']
   spec.email         = ['ruby@0xc0dedbad.com']
   spec.description   = %q{Manipulate (currently only set) Chef attributes (currently only for nodes) via Knife}
