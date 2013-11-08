@@ -4,7 +4,7 @@ module KnifeAttribute
       include KnifeAttribute::CommonOptions
       include KnifeAttribute::Node::Helpers
 
-      banner 'knife node attribute set NODE PERIOD.SEPARATED.KEY STRING_OR_JSON_VALUE (options)'
+      banner 'knife node attribute set NODE PERIOD.SEPARATED.ATTRIBUTE STRING_OR_JSON_VALUE (options)'
 
       def run
         check_arguments
