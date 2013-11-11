@@ -12,20 +12,12 @@ module KnifeAttribute
         end
       end
 
-      def node_name
-        @node_name ||= @name_args[0]
-      end
-
-      def attribute
-        @attribute ||= @name_args[1]
-      end
-
-      def value
-        @value ||= @name_args[2]
-      end
-
       def node
-        @node ||= Chef::Node.load(node_name)
+        @node ||= Chef::Node.load(entity_name)
+      end
+
+      def entity_type
+        :node
       end
     end
   end
