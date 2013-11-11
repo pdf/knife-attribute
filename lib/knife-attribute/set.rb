@@ -7,15 +7,10 @@ module KnifeAttribute
         def run
           check_arguments
 
-          case config[:attribute_type]
-          when 'default'
-            set_attribute(entity.default_attrs)
-          when 'override'
-            set_attribute(entity.override_attrs)
-          when 'automatic'
-            set_attribute(entity.automatic_attrs)
-          when 'normal', nil
-            set_attribute(entity.normal_attrs)
+          if config[:attribute_type]
+            set_attribute(entity.send(attribute_type_map[config[:attribute_type].to_sym]))
+          else
+            set_attribute(entity.send(attribute_type_map[default_attribute_type]))
           end
         end
 

@@ -1,35 +1,33 @@
 module KnifeAttribute
-  module Node
+  module Role
     module Helpers
       include KnifeAttribute::Helpers
 
       def self.included(base)
         base.class_eval do
           deps do
-            require 'chef/node'
             require 'chef/json_compat'
           end
 
           def self.attribute_type_map
             {
-              default: :default_attrs,
-              normal: :normal_attrs,
-              override: :override_attrs,
+              default: :default_attributes,
+              override: :override_attributes,
             }
           end
 
           def self.default_attribute_type
-            :normal
+            :default
           end
         end
       end
 
-      def node
-        @node ||= Chef::Node.load(entity_name)
+      def role
+        @role ||= Chef::Role.load(entity_name)
       end
 
       def entity_type
-        :node
+        :role
       end
     end
   end

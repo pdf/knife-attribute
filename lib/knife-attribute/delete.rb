@@ -7,17 +7,10 @@ module KnifeAttribute
         def run
           check_arguments
 
-          case config[:attribute_type]
-          when 'default'
-            delete_attribute(entity.default_attrs)
-          when 'override'
-            delete_attribute(entity.override_attrs)
-          when 'automatic'
-            delete_attribute(entity.automatic_attrs)
-          when 'normal'
-            delete_attribute(entity.normal_attrs)
+          if config[:attribute_type]
+            delete_attribute(entity.send(attribute_type_map[config[:attribute_type].to_sym]))
           else
-            delete_attribute(entity.normal_attrs)
+            delete_attribute(entity.send(attribute_type_map[default_attribute_type]))
           end
         end
 

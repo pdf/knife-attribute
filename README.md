@@ -15,8 +15,9 @@ gem install knife-attribute
 In this initial release, only `node attribute set` is implemented, more to
 follow in the near future.
 
-To work with attributes of type `default`, `normal`, `override` or `automatic`,
-use the `-t TYPE` flag (default if unspecified is `normal`).
+To work with attributes of type `default`, `normal` or `override`, use the
+`-t TYPE` flag (the default type if unspecified is `normal` for `nodes`, and
+`default` for all other entity types).
 
 ### node attribute set
 
