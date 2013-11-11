@@ -78,7 +78,39 @@ knife node attribute delete foo.example.org apache.listen_ports -t override
 The above would delete the `foo.example.org` node's `override` attribute
 `['apache']['listen_ports']`.
 
+### role attribute set
 
-## TODO
-- Implement attribute get/set/delete for roles
-- Implement attribute get/set/delete for environments
+Valid attribute types for roles are: `['default', 'override']`.
+
+For usage, see `node attribute set` above.
+
+### role attribute get
+
+Valid attribute types for roles are: `['default', 'override']`.
+
+For usage, see `node attribute get` above.
+
+### role attribute delete
+
+Valid attribute types for roles are: `['default', 'override']`.
+
+For usage, see `node attribute delete` above.
+
+### environment attribute set
+
+Valid attribute types for environments are: `['default', 'override']`.
+
+For usage, see `node attribute set` above.
+
+### environment attribute get
+
+Valid attribute types for environments are: `['default', 'override']`.
+
+For usage, see `node attribute get` above.
+
+### environment attribute delete
+
+Valid attribute types for environments are: `['default', 'override']`.
+
+For usage, see `node attribute delete` above.
+
