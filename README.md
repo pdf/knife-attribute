@@ -74,7 +74,7 @@ The above would delete the `foo.example.org` node's `normal` attribute `tz`.
 knife node attribute delete foo.example.org apache.listen_ports -t override
 ```
 
-The above would delete the `foo.example.org` node's `override` attribute.
+The above would delete the `foo.example.org` node's `override` attribute
 `['apache']['listen_ports']`.
 
 
