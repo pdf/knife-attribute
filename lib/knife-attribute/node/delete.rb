@@ -2,7 +2,7 @@ module KnifeAttribute
   module Node
     class NodeAttributeDelete < Chef::Knife
       include KnifeAttribute::Node::Helpers
-      include KnifeAttribute::Get
+      include KnifeAttribute::Delete
 
       banner 'knife node attribute delete NODE PERIOD.SEPARATED.ATTRIBUTE (options)'
 

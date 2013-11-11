@@ -2,7 +2,7 @@ module KnifeAttribute
   module Environment
     class EnvironmentAttributeDelete < Chef::Knife
       include KnifeAttribute::Environment::Helpers
-      include KnifeAttribute::Get
+      include KnifeAttribute::Delete
 
       banner 'knife environment attribute delete ENVIRONMENT PERIOD.SEPARATED.ATTRIBUTE (options)'
 
