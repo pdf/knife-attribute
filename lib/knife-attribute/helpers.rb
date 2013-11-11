@@ -36,7 +36,7 @@ module KnifeAttribute
     end
 
     def default_attribute_type
-      self.class.attribute_type_map
+      self.class.default_attribute_type
     end
 
     def mapped_config
