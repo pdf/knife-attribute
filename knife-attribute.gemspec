@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = KnifeAttribute::VERSION
   spec.authors       = ['Peter Fern']
   spec.email         = ['ruby@0xc0dedbad.com']
-  spec.description   = %q{Manipulate Chef attributes (currently only for nodes) via Knife}
+  spec.description   = %q{Manipulate Chef attributes via Knife}
   spec.summary       = %q{Manipulate Chef attributes via Knife}
   spec.homepage      = 'https://github.com/pdf/knife-attribute'
   spec.license       = 'MIT'
