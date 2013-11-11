@@ -54,7 +54,7 @@ Unlike other actions, by default the `get` action will return the combined
 specified.
 
 ```bash
-knife node attribute set foo.example.org apache.listen_ports -t override -F json
+knife node attribute get foo.example.org apache.listen_ports -t override -F json
 ```
 
 The above would get the `foo.example.org` node's `override` attribute
@@ -71,7 +71,7 @@ knife node attribute delete foo.example.org tz
 The above would delete the `foo.example.org` node's `normal` attribute `tz`.
 
 ```bash
-knife node attribute set foo.example.org apache.listen_ports -t override
+knife node attribute delete foo.example.org apache.listen_ports -t override
 ```
 
 The above would delete the `foo.example.org` node's `override` attribute.
