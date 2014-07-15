@@ -44,7 +44,7 @@ module KnifeAttribute
               new_value = value
             end
             new_attribute = attribute.split('.').reverse.inject(new_value) { |result, key| { key => result } }
-            target.merge!(new_attribute)
+            Chef::Mixin::DeepMerge.hash_only_merge!(target, new_attribute)
 
             if entity.save
               ui.info("Successfully set #{entity_type.to_s} #{ui.color(entity_name, :cyan)} attribute #{ui.color(attribute, :cyan)} to: #{ui.color(new_value.inspect, :green)}")
