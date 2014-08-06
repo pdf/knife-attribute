@@ -40,7 +40,7 @@ module KnifeAttribute
           def set_attribute(target)
             begin
               new_value = Chef::JSONCompat.from_json(value)
-            rescue JSON::ParserError, Yajl::ParseError
+            rescue
               new_value = value
             end
             new_attribute = attribute.split('.').reverse.inject(new_value) { |result, key| { key => result } }
