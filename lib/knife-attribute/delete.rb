@@ -50,7 +50,7 @@ module KnifeAttribute
             if result
               ui.info("Successfully deleted #{entity_type.to_s} #{ui.color(entity_name, :cyan)} attribute #{ui.color(attribute, :green)}")
             else
-              ui.fatal("Failed deleting #{entity_type.to_s} #{ui.color(entity_name, :magenta)} attribute #{ui.color(new_attribute, :magenta)}")
+              ui.fatal("Failed deleting #{entity_type.to_s} #{ui.color(entity_name, :magenta)} attribute #{ui.color(attribute, :magenta)}")
               exit 1
             end
           end
