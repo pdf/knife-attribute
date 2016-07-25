@@ -10,6 +10,12 @@ Install via rubygems:
 gem install knife-attribute
 ```
 
+Or for more recent Chef or ChefDK installations:
+
+```bash
+chef gem install knife-attribute
+```
+
 ## Usage
 
 To work with attributes of type `default`, `normal` or `override`, use the
