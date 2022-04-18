@@ -1,3 +1,5 @@
+**ARCHIVED: This project is unmaintained, reach out if you would like to adopt**
+
 # knife-attribute
 
 Manipulate Chef attributes via Knife
